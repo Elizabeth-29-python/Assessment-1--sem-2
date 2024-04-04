@@ -1,0 +1,194 @@
+*{
+    body {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        background-color: #0a183e;
+        position:relative;
+    }
+    
+    header {
+
+        color: #f9bb84;
+        padding: 200px 0;
+        text-align: center;
+        font-family: fantasy;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 0.4;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 25px;
+        
+    }
+    
+    nav ul li {
+        display:inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #0ea0db;
+        text-decoration: none;
+    }
+    
+    main {
+        width: 70%;
+        margin: 40px auto;
+    }
+    
+    section {
+        margin-bottom: 5cm;
+        font-size: 25px;
+        color:aliceblue ;
+
+    }
+    
+    h1 {
+        font-size: 200px; 
+        text-shadow: 1px 2px #e2faff; 
+        letter-spacing: 2mm;
+    }
+    h2 {
+        color: #cdb69e;
+        text-align: center;
+        font-family: 'Ice kingdom', sans-serif;
+        font-size: 60px;
+        text-shadow: 1px 1px #e2faff;
+        letter-spacing: 5mm;
+    }
+
+    footer {
+        position: bottom;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        background-color: #08122f;
+        color: #6377a2;
+    }
+    
+    .headercontainer {
+        margin-bottom: 5cm;
+    }
+    .button {
+        display: inline-block;
+        padding: 15px 20px;
+        background-color: #cdb69e;
+        color: #18322f;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+    
+    .button:hover {
+        background-color: #18322f;
+    }
+    
+    .p1 {
+        margin: auto;
+        padding: 20px;
+    }
+    .plott {
+        text-align: justify;
+        margin-top: 3cm;
+    }
+
+    .c1 {
+        margin-top: auto;
+        margin-bottom: 15cm;
+        padding: 30px;
+    }
+    .char {
+    margin-top: 3cm;
+    margin-left: 2cm;
+    margin-right: 4cm;
+    text-align: center;
+    }
+
+    .list1, .list2 {
+        list-style: none;
+        line-height: 1.7;
+    }
+
+    .list1 {
+        float: left;
+
+    }
+
+    .list2 {
+        float: right;
+        
+    }
+    .c2 {
+        margin-top: 17cm;
+        margin-bottom: 15cm;
+        padding: 30px;
+    }
+
+    .casts {
+        margin-top: 3cm;
+        margin-left: 1cm;
+        margin-right: -1cm;
+        th {font-family: "Frank Ruhl Libre", serif;
+            font-weight: 900;
+            font-style: normal; color: #f9bb84;}
+        }
+    }
+    
+    .table1, .table2 {
+        float:left;
+        width: 50%;
+        text-align: left;
+    }
+    
+    .k1 {
+        margin-top: 8cm;
+        margin-bottom: 52cm;
+        padding: 30px;
+    }
+
+    .keyinfo {
+        margin-top: 2cm;
+        margin-left: 1cm;
+        margin-right: 1cm;
+        text-align: center;
+        p {font-family: "Frank Ruhl Libre", serif;
+            font-weight: 900;
+            font-style: normal; color: #49a5dac7; font-size: 30px;}
+    }
+
+    .list1k, .list2k {
+        list-style: none;
+        line-height: 1.7;
+    }
+
+    .list1k {
+        float: left;
+    }
+
+    .list2k {
+        float: right;
+    }
+
+    .r1 {
+        margin-top: auto;
+        margin-bottom: 6cm;
+        padding: 30px;
+    }
+
+    .rev {
+        margin-top: 3cm;
+        text-align: justify;
+        h4 {
+            font-family: "Frank Ruhl Libre", serif;
+            font-weight: 900;
+            font-style: normal; color: #49a5dac7; font-size: 30px;
+        }
+    }
+
