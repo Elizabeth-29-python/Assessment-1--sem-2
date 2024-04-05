@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8"> <!--This supports a wide range of characters which includes from other languages-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This sets the viewport to the width of the device's screen which will be the width of the webpage.-->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+
+
+<title>Mount Fuji Photography</title>
+
+<style>
+    
+
+    .background-overlay { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; 
+        background-color: rgba(0, 0, 0, 0.4); 
+    }
+    body { /*This is the CSS code for the body*/
+        font-family: Arial, Helvetica;
+        background-image: url('morning-on-the-seine-near-giverny.jpg'); /*This is the background image of the website*/
+        background-size: cover; /* This covers the entire viewport */
+        background-position: center; /*This centers the background image*/
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /*This hides the overflowing content and removes the scrollbar*/
+        position: relative;
+    }
+    header { /*This is the CSS code for the header*/
+        background-color: #fa8072; 
+        font-family: 'Antic Slab', serif;
+        letter-spacing: 2px; 
+        font-size: 20px;
+        color: #fac472;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        z-index: 1; 
+    }
+    .image { /*This is the CSS code for image*/
+        position: relative;
+        width: 400px;
+        height: 500px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(65, 186, 237, 0.5); 
+        overflow: hidden;
+        border-radius: 10px; 
+        filter: drop-shadow(50px 50px 70px #081624); 
+    }
+    .gallery { /*gallery which is the subject of the website, the photos and information*/
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        margin-top: 3cm;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .image:hover { 
+        cursor: pointer; 
+    }
+
+    .image:hover .image-info { 
+        height: 180px;
+        width: 100%;
+        background:  rgba(0, 0, 0, 0.7);
+    }
+
+    .image:hover p { /*CSS code for paragraph when hover for it to show*/
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .image img { /*CSS code for the original images*/
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: filter 0.3s; /* Adds transition for smooth effect */
+    }
+
+    /* the filter effects-individual images */
+    #image1:hover img {
+        filter: blur(1px) hue-rotate(80deg) contrast(120%) hue-rotate(6deg); 
+        
+    }
+
+    #image2:hover img {
+        filter:  saturate(60%);
+    }
+
+    #image3:hover img {
+        filter: brightness(90%) invert(29%) blur(10px);
+    }
+
+    .image-info { /*image-info this is set before hovering to the images.*/
+        position: absolute;
+        height: 80px;
+        width: 100%;
+        left:0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box; 
+        bottom: 0px;
+        font-size: 15px;
+    }
+
+    span { /*To style the highlighted titles and making them bold*/
+        font-weight: bold;
+    }
+
+    h3 { 
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    p { 
+        margin: 20px;
+        visibility:hidden;
+        opacity: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="background-overlay"></div> <!--This is for the background image to be able to adjust it in the CSS-->
+
+<header>
+    <h1>Mount Fuji Photography</h1>
+</header>
+
+<div class="gallery"> <!--Div class to make it organize to style-->
+    <div id="image1" class="image"> <!--Div id so that it can be adjust in the style seperately from the others that all have the same class name-->
+        <img src="mountfuji1.png" alt="Mt. Fuji from lake kawaguchiko, November 8"> <!--image with alt name-->
+        <div class="image-info"> <!--image-info-->
+            <h3>Mt. Fuji from Lake Kawaguchiko, November 8</h3>
+            
+            
+             <p>&copy; www.reddit.com, r/SonyAlpha, user CuntOfGod</p></div> <!--Copyright license to show -->
+    </div>
+    <div id="image2" class="image"> 
+        <img src="mountfuji2.jpg" alt="Mt. Fuji, Shizuoka, and Japonsko"> 
+        <div class="image-info"> 
+            <h3>Mt. Fuji, Shizuoka, and Japonsko</h3>
+
+            <p>&copy; Mt. Fuji, Shizuoka, and Japonsko</p></div> 
+    </div>
+    <div id="image3" class="image"> 
+        <img src="mountfuji3.png" alt="Mt. Fuji Aerial, August 5 2020"> 
+            <h3>Mt. Fuji Aerial, August 5 2020</h3>
+    
+            <p>&copy; www.wallha.com, wallpaper, aerial-japan-landscape-mount-fuji-mountain-volcano </p></div> <!--Copyright license-->
+    </div>
+</div>
+
+</body>
+</html>
+
